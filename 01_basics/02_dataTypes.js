@@ -1,24 +1,26 @@
-"use strict" // treat all JS code as newer version
- 
-let accountNumber = 12345;
-let accountName = "Tariq";
-let accountLogin = false;
-let accountValue = null;
-let accountState;
+"use strict"; // treat all Javascript code as newer version
 
-// Primitive Data Types
-// number => 2 to power 53
-// bigint => For larger numbers
-// string => "Tariq"
-// boolean => true/false
-// null => standalone value (object)
-// undefined => undefined
-// symbol => unique
+// alert(3 + 3) // we are using nodejs, not browser
 
-console.table([accountNumber, accountName, accountLogin, accountValue, accountState]);
+// Here you can find ECMAScript standards
+// https://tc39.es/ecma262/
 
-console.log(typeof accountName);
+// Here you can find documentation about Javascript
+// https://developer.mozilla.org/en-US/docs/Web/API/Window
 
-console.log(typeof accountValue);
 
-console.log(typeof accountState);
+// Javascript datatypes
+// There are 2 types of data types in javascript Primitive and Non-primitive
+
+// Primitive data types
+
+// number = 2 to power 53
+// bigint = 2337789000343345345346345435243532524535 // value that does not fit into number
+// string = "Tariq"
+// boolean = true/false
+// null // its a standalone value, it does't mean it has 0 value, null means an empty value
+// undefined // the value yet not assigned
+// symbol // unique
+
+console.log(typeof undefined) // This will return undefined type
+console.log(typeof null); // This will return object type
