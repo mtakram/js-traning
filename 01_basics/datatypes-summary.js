@@ -65,3 +65,32 @@ let myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+
+// Memory types in javascript
+
+// Stack(Primitive), Heap(Non-primitive)
+
+let myYoutubeName = "Tariq Channel"
+let myOtherYoutubeName =  myYoutubeName;
+
+myOtherYoutubeName = "Akram Channel"
+
+console.log(myOtherYoutubeName)
+console.log(myYoutubeName);
+
+// myYoutubeName would not change the value because in stack memory it copies the value and does not change in original value
+
+
+let userOne = {
+    email: "user@google.com",
+    name: "user"
+}
+
+let userTwo = userOne
+
+userTwo.email = "tariq@google.com"
+
+console.table([userOne.email, userTwo.email]);
+
+// Both value would change because in heap memory it direct change the refrence
